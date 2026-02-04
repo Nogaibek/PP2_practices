@@ -1,0 +1,11 @@
+x = 10
+print(x > 5 and x < 15)
+print(x < 5 or x > 15)
+print(not(x == 10))
+print((x >= 5 and x <= 15) or (x == 20))
+print((x < 5 or x > 15) and (x != 10))
+print(not(x < 0 or x > 20))
+print((x == 10) and not(x < 0))
+print((x > 0 and x < 20) or (x == 10))
+print((x != 10) or not(x >= 5))
+print(not((x > 5 and x < 15) or (x == 10)))

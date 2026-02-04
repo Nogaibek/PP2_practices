@@ -1,3 +1,3 @@
-a = input()
-b = int(input())
-print(a*b)
+name = "Danial" 
+age = 18
+print(f"hello my {name}, and my age {age}")
