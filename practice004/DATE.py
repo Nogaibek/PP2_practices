@@ -22,6 +22,5 @@ print()
 
 #4
 s = tomorrow - yesterday
-s = s.total_seconds()
+s = s.total_seconds()/60
 print(f"Seconds between tomorrow and yesterday: {s}")
-
