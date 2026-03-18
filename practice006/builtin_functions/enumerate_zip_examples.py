@@ -1,6 +1,6 @@
-Name = ["Messi", "Suarez", "Neymar", "Xavi", "Iniesta", "CR7"]
-Ballon_dors = [8, 0, 0, 0, 0, 5]
-for index, name in enumerate(Name):
+animal = ["dog", "cat", "mouse", "hourse", "elephant", "giraffe"]
+ages = [8, 3, 5, 4, 3, 5]
+for index, name in enumerate(animal):
     print(f"{index + 1}. {name}")
-for name, number in zip(Name, Ballon_dors):
-    print(f"{name} has {number} Ballon_dors")
+for name, number in zip(animal, ages):
+    print(f"{name}, {number} years old")
