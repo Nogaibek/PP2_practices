@@ -11,12 +11,12 @@ class MickeyClock:
  
         img_dir = os.path.join(os.path.dirname(__file__), "images")
  
-        # Load background clock image (mickeyclock.jpeg)
+        # Load background clock image
         bg_path = os.path.join(img_dir, "mickeyclock.jpeg")
         self.bg = pygame.image.load(bg_path)
         self.bg = pygame.transform.scale(self.bg, (width, height))
  
-        # Create Mickey hand surface (white glove shape drawn programmatically)
+        # Create Mickey hand surface
         self.hand_img = self._create_hand_image()
  
         # Clock center

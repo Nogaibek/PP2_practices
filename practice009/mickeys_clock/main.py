@@ -4,7 +4,7 @@ from clock import MickeyClock
  
 WIDTH = 500
 HEIGHT = 500
-FPS = 1   # update every second
+FPS = 1 
  
  
 def main():
