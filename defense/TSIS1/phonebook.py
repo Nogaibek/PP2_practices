@@ -1,16 +1,3 @@
-"""
-phonebook.py  –  PhoneBook Extended (TSIS 1)
-Builds on Practice 7-8 (CRUD, CSV import, pattern search, upsert, pagination, delete procedures).
-NEW in TSIS 1:
-  • Extended schema: phones table, groups table, email, birthday
-  • Filter by group, search by email, sort by name/birthday/date_added
-  • Paginated console navigation (next / prev / quit)
-  • Export contacts → JSON
-  • Import contacts ← JSON  (duplicate handling: skip / overwrite)
-  • Extended CSV import with new fields
-  • Calls new stored procedures: add_phone, move_to_group, search_contacts
-"""
-
 import csv
 import json
 import os
@@ -90,7 +77,7 @@ def apply_procedures(conn):
 
 
 # ─────────────────────────────────────────────────────────────
-# 3.1 – Extended schema helpers (groups, phones)
+# Extended schema helpers (groups, phones)
 # ─────────────────────────────────────────────────────────────
 
 def get_or_create_group(conn, group_name: str) -> int | None:
@@ -159,7 +146,7 @@ def add_contact(conn):
 
 
 # ─────────────────────────────────────────────────────────────
-# 3.2 – Advanced search / filter / sort
+# Advanced search / filter / sort
 # ─────────────────────────────────────────────────────────────
 
 SORT_MAP = {
@@ -304,7 +291,7 @@ def paginated_browse(conn):
 
 
 # ─────────────────────────────────────────────────────────────
-# 3.3 – Export to JSON
+# Export to JSON
 # ─────────────────────────────────────────────────────────────
 
 def export_to_json(conn):
@@ -343,7 +330,7 @@ def export_to_json(conn):
 
 
 # ─────────────────────────────────────────────────────────────
-# 3.3 – Import from JSON  (duplicate → skip or overwrite)
+# Import from JSON  (duplicate → skip or overwrite)
 # ─────────────────────────────────────────────────────────────
 
 def import_from_json(conn):
@@ -423,7 +410,7 @@ def import_from_json(conn):
 
 
 # ─────────────────────────────────────────────────────────────
-# 3.3 – Extended CSV import (new fields: email, birthday, group, phone type)
+# Extended CSV import (new fields: email, birthday, group, phone type)
 # ─────────────────────────────────────────────────────────────
 
 def import_from_csv(conn):
@@ -494,7 +481,7 @@ def import_from_csv(conn):
 
 
 # ─────────────────────────────────────────────────────────────
-# 3.4 – Call stored procedures from console
+# Call stored procedures from console
 # ─────────────────────────────────────────────────────────────
 
 def console_add_phone(conn):
@@ -532,7 +519,7 @@ def console_move_to_group(conn):
 
 MENU = """
 ╔══════════════════════════════════════════╗
-║        PhoneBook Extended (TSIS 1)       ║
+║        PhoneBook Extended                ║
 ╠══════════════════════════════════════════╣
 ║  1. Add / update contact                 ║
 ║  2. Browse (paginated)                   ║
