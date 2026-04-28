@@ -1,8 +1,3 @@
-# ============================================================
-# tools.py — Drawing tool implementations for Paint TSIS 2
-# Each tool class handles its own draw / preview / commit logic.
-# ============================================================
-
 import pygame
 import math
 from collections import deque
