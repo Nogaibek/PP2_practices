@@ -1,27 +1,3 @@
-"""
-db.py
------
-PostgreSQL persistence layer using psycopg2.
-
-If the database is unavailable (e.g. running locally without Postgres)
-every public function degrades gracefully: saves are silently skipped and
-reads return empty lists / None.  A single DB_AVAILABLE flag controls this.
-
-Schema (auto-created on first connect):
-
-    CREATE TABLE players (
-        id       SERIAL PRIMARY KEY,
-        username VARCHAR(50) UNIQUE NOT NULL
-    );
-
-    CREATE TABLE game_sessions (
-        id            SERIAL PRIMARY KEY,
-        player_id     INTEGER REFERENCES players(id),
-        score         INTEGER   NOT NULL,
-        level_reached INTEGER   NOT NULL,
-        played_at     TIMESTAMP DEFAULT NOW()
-    );
-"""
 import os
 import datetime
 from contextlib import contextmanager

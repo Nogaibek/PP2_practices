@@ -1,12 +1,3 @@
-"""
-persistence.py
---------------
-Tiny JSON-backed storage for settings and the leaderboard.
-
-We keep file paths next to the script (not the cwd) so running the game
-from anywhere still finds the same data files.
-"""
-
 import json
 import os
 

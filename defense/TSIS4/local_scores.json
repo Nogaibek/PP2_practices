@@ -7,6 +7,12 @@
   },
   {
     "username": "danial",
+    "score": 45,
+    "level_reached": 1,
+    "played_at": "2026-04-29"
+  },
+  {
+    "username": "danial",
     "score": 35,
     "level_reached": 1,
     "played_at": "2026-04-28"
@@ -34,5 +40,17 @@
     "score": 0,
     "level_reached": 1,
     "played_at": "2026-04-28"
+  },
+  {
+    "username": "danial",
+    "score": 0,
+    "level_reached": 1,
+    "played_at": "2026-04-29"
+  },
+  {
+    "username": "danial",
+    "score": 0,
+    "level_reached": 1,
+    "played_at": "2026-04-29"
   }
 ]

@@ -6,9 +6,21 @@
     "coins": 8
   },
   {
+    "name": "danial",
+    "score": 615,
+    "distance": 5000,
+    "coins": 7
+  },
+  {
     "name": "Danial",
     "score": 570,
     "distance": 5003,
+    "coins": 4
+  },
+  {
+    "name": "danial",
+    "score": 570,
+    "distance": 5001,
     "coins": 4
   },
   {
@@ -16,5 +28,17 @@
     "score": 555,
     "distance": 5000,
     "coins": 3
+  },
+  {
+    "name": "danial",
+    "score": 400,
+    "distance": 3257,
+    "coins": 5
+  },
+  {
+    "name": "danial",
+    "score": 149,
+    "distance": 1349,
+    "coins": 1
   }
 ]

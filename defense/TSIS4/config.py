@@ -1,10 +1,3 @@
-"""
-config.py
----------
-All magic numbers and tunable constants in one place.
-Import this everywhere instead of scattering literals.
-"""
-
 # Window / grid
 WIN_W = 800
 WIN_H = 640
